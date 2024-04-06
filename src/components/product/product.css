@@ -1,0 +1,131 @@
+.product {
+    border-radius: 15px;
+    height: 500px;
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0e253b;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product .description {
+    text-align: center;
+}
+
+.product:hover {
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.product .original-price {
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.product .discounted-price {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.product .discount {
+    color: red;
+    margin-left: 10px;
+}
+
+.sliderImages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.sliderImages img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+.product-slider {
+    position: relative ;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.slider-controls button {
+    background: none;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.product .thumbnail-container {
+    width: 100%;
+    height: 300px; 
+    overflow: hidden;
+  }
+  
+.product .thumbnail-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-fit: contain;
+}
+
+.addToCartBttn {
+    background-color: #0e253b;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .addToCartBttn:hover {
+    background-color: #45a049;
+  }
+  
+.notification {
+    position: fixed;
+    top: 30px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    z-index: 9999;
+}

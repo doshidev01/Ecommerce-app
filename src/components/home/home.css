@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.products {
+    width: 100%;
+    height: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: -10px;
+    padding: 20px;
+    place-items: center;
+    margin-top: -20px;
+}
+
+.searchAndSortContainer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchBar {
+    flex-grow: 1;
+    margin-top: 80px;
+    display: flex;
+    margin-bottom: 0.1px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    
+  }
+  
+.searchBar label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.searchBar input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 80%;
+}
+  
+.searchBar input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+.sortDropdown {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  text-align: right;
+  margin-right: 5px;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.sortDropdown select {
+  padding: 6px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.sortDropdown select:hover {
+    border-color: #888;
+}
+
+.sortDropdown select:focus {
+    border-color: #555;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.languageDropdown {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  text-align: right;
+  margin-right: 10px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.languageDropdown select {
+  padding: 6px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.languageDropdown select:hover {
+    border-color: #888;
+}
+
+.languageDropdown select:focus {
+    border-color: #555;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+  
